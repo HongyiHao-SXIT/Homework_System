@@ -1,13 +1,13 @@
-package com.platform.ojplatform;
+package com.oj_platform.oj_platform;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OjplatformApplication {
+public class OjPlatformApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OjplatformApplication.class, args);
+		SpringApplication.run(OjPlatformApplication.class, args);
 	}
 
 }

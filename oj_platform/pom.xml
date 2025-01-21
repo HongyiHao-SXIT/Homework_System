@@ -8,10 +8,10 @@
 		<version>3.4.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.platform</groupId>
-	<artifactId>ojplatform</artifactId>
+	<groupId>com.oj_platform</groupId>
+	<artifactId>oj_platform</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ojplatform</name>
+	<name>oj_platform</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -27,7 +27,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>23</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
