@@ -1,5 +1,12 @@
 package com.ojprogram.ojprogram.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.util.Date;
+
 public class Manager {
 
     @TableId(type = IdType.AUTO)

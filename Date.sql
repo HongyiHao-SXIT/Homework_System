@@ -5,7 +5,7 @@ SET FOREIGN_KEY_CHECK = 0;
 
 DROP TABLE IF EXISTS `User`
 
-CREATE TABLE`User` {
+CREATE TABLE`User`{
     `id` int(0) NOT NULL AUTO_INCREMENT,
     `account` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
     `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
@@ -17,6 +17,8 @@ CREATE TABLE`User` {
     PRIMARY KEY (`id`) USING BTREE
 } ENGINE = InnoDB AUTO_INCREMENT = 45 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
 
+DROP TABLE IF EXISTS `Manager`
+
 CREATE TABLE`Manager` {
     `id` int(0) NOT NULL AUTO_INCREMENT,
     `account` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
@@ -27,6 +29,8 @@ CREATE TABLE`Manager` {
     `create_time` datetime(0) NULL DEFAULT NULL,
     PRIMARY KEY (`id`) USING BTREE
 } ENGINE = InnoDB AUTO_INCREMENT = 45 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
+DROP TABLE IF EXISTS `Works`
 
 CREATE TABLE`Works` {
     `id` int(0) NOT NULL AUTO_INCREMENT,

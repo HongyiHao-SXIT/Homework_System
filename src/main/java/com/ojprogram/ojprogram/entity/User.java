@@ -1,4 +1,6 @@
 package com.ojprogram.ojprogram.entity;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.IdType;
 
 public class User {
 

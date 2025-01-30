@@ -1,7 +1,7 @@
 package com.ojprogram.ojprogram.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-package com.ojprogram.ojprogram.entity;
+import com.ojprogram.ojprogram.entity.Works;
 
 public interface WorksMapper extends BaseMapper<Works> {
 }
