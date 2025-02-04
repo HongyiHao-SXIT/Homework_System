@@ -1,7 +1,7 @@
 package com.ojprogram.ojprogram.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.ojprogram.ojprogram.common.api.R;;
+import com.ojprogram.ojprogram.common.api.R;
 import com.ojprogram.ojprogram.common.exception.ServiceException;
 import com.ojprogram.ojprogram.common.utils.AuthUtil;
 import com.ojprogram.ojprogram.entity.User;

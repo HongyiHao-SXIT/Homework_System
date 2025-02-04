@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.ojprogram.ojprogram.common.api.R;
 import com.ojprogram.ojprogram.common.exception.ServiceException;
 import com.ojprogram.ojprogram.common.utils.AuthUtil;
-import com.ojprogram.ojprogram.entity.Works;
+import com.ojprogram.ojprogram.entity.Hw;
 import com.ojprogram.ojprogram.mapper.UserMapper;
 import com.ojprogram.ojprogram.mapper.WorksMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ public class BlogController {
 
 
     @PostMapping("/save")
-    public R save(@RequestBody Works works) {
+    public R save(@RequestBody Hw works) {
         works.setAccount(AuthUtil.getUserAccount());
         blog.setCreateTime(new Date());
         blogMapper.insert(blog);
