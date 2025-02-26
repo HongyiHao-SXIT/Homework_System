@@ -1,0 +1,57 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "page/welcome.html"
+  },
+  "logoInfo": {
+    "title": "HENU",
+    "image": "images/pns.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "常规管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "主页面板",
+          "href": "page/welcome.html",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "用户管理",
+          "href": "page/user_manage.html",
+          "icon": "fa fa-users",
+          "target": "_self"
+        },
+        {
+          "title": "文章管理",
+          "href": "page/article_manage.html",
+          "icon": "fa fa-file-text",
+          "target": "_self"
+        },
+        {
+          "title": "题目管理",
+          "href": "page/problem_manage.html",
+          "icon": "fa fa-server",
+          "target": "_self"
+        },
+        {
+          "title": "测评管理",
+          "href": "page/evaluation_manage.html",
+          "icon": "fa fa-list-ul",
+          "target": "_self"
+        },
+        {
+          "title": "竞赛管理",
+          "href": "page/contest_manage.html",
+          "icon": "fa fa-window-restore",
+          "target": "_self"
+        }
+      ]
+    }
+  ]
+}

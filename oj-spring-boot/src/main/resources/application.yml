@@ -1,0 +1,95 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://116.222.21.125:3306/onlineoj?useUnicode=true&characterEncoding=UTF-8&useJDBC49CompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    username: root
+    password: weiyuexin
+    type: com.alibaba.druid.pool.DruidDataSource
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  redis:
+    host: 116.222.21.125
+    port: 6379
+    password: weiyuexin
+    lettuce:
+      pool:
+        # 最大阻塞等待时间，负数表示没有限制
+        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 5
+        # 连接池中的最小空闲连接
+        min-idle: 0
+        # 连接池中最大连接数，负数表示没有限制
+        max-active: 20
+    database: 0
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+  devtools:
+    restart:
+      #设置不参与热部署的文件或文件夹
+      exclude: application.yml,static/**,public/**
+      enabled: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  tencent:
+    secretId: AKID
+    secretKey: 1qlUzIOJ8
+    bucket: ap-beijing
+    bucketName: wyx-130
+    path: https://img.weiyuexin.top
+    qianzui: img
+    qianzui-file: file
+
+logging:
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss.SSS
+  file:
+    name: ./log/onlineoj.log
+  logback:
+    rollingpolicy: # 持久化
+      file-name-pattern: ${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz
+      max-file-size: 1MB
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+config:
+  jwt:
+    # 加密密钥
+    secret: weiyuexin_henu
+    # token有效时长
+    expire: 604800
+    # header 名称
+    header: wyx
+knife4j:
+  enable: true
+  basic:
+    username: root
+    password: root
+    enable: false
+  openapi:
+    title: 在线代码测评系统官方文档
+    description: "在线代码测评系统 API 文档"
+    email: 3022422894@qq.com
+    concat: YuexinWei
+    url: https://blog.weiyuexin.top
+    version: v4.0.2
+    license: Apache 2.0
+    license-url: https://blog.weiyuexin.top
+    terms-of-service-url: https://blog.weiyuexin.top
+    group:
+      controller:
+        group-name: 接口
+        api-rule: package
+        api-rule-resources:
+          - top.weiyuexin.controller
