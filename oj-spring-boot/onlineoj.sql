@@ -1,21 +1,4 @@
--- Active: 1736786939860@@127.0.0.1@3306@ojdemo
-/*
- Navicat Premium Data Transfer
-
- Source Server         : 华为云
- Source Server Type    : MySQL
- Source Server Version : 80200 (8.2.0)
- Source Host           : 116.204.21.236:3306
- Source Schema         : onlineoj
-
- Target Server Type    : MySQL
- Target Server Version : 80200 (8.2.0)
- File Encoding         : 65001
-
- Date: 30/11/2023 13:19:41
-*/
-
-SET NAMES utf8mb4;
+-- Active: 1736786939860@@127.0.0.1@3306@ojprogram
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
