@@ -1,5 +1,5 @@
-package com.homeworksystem.homeworksystem.controller;
- 
+package com.hongming_academic_map.homgming_academic_map.controller;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
  
